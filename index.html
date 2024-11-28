@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catch the Ball Game</title>
+  <title>Catch the Ball - Level & Score</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="game">
+    <div id="scoreboard">
+      <span>Score: <span id="score">0</span></span>
+      <span>Level: <span id="level">1</span></span>
+    </div>
     <div id="ball"></div>
     <div id="paddle"></div>
+  </div>
+  <div id="controls">
+    <button id="left-btn">◀</button>
+    <button id="right-btn">▶</button>
   </div>
   <script src="script.js"></script>
 </body>
