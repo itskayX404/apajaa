@@ -36,9 +36,14 @@ function updateBall() {
   ballX += ballSpeedX;
   ballY += ballSpeedY;
 
-  // Bounce off walls
+  // Bounce off walls (left and right)
   if (ballX <= 0 || ballX >= game.offsetWidth - ball.offsetWidth) {
     ballSpeedX *= -1;
+  }
+
+  // Bounce off the top
+  if (ballY <= 0) {
+    ballSpeedY *= -1;
   }
 
   // Bounce off paddle
